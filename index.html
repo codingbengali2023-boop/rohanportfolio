@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="fav.jpeg" type="image/x-icon">
+    <title>Rohan Biswas | Portfolio</title>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap"
+        rel="stylesheet">
+    <!-- Custom CSS File -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Canvas Background for Animated Particles -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Navigation Header -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="logo">
+                <span>Rohan</span>.dev
+            </a>
+
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#about" class="nav-link"><i class="fas fa-user"></i> About</a>
+                <a href="#education" class="nav-link"><i class="fas fa-graduation-cap"></i> Education</a>
+                <a href="#skills" class="nav-link"><i class="fas fa-code"></i> Skills</a>
+                <a href="#socials" class="nav-link"><i class="fas fa-share-alt"></i> Connect</a>
+                <a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="main-content">
+
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-container">
+                <div class="hero-image-wrapper">
+                    <div class="profile-frame">
+                        <img src="rohan.jpeg" alt="Rohan Biswas" class="profile-img">
+                        <div class="glow-ring"></div>
+                    </div>
+                </div>
+
+                <div class="hero-text">
+                    <div class="badge"><i class="fas fa-circle-dot"></i> Available for Opportunities</div>
+                    <h1 class="hero-title">Hi, I'm <span class="gradient-text">Rohan Biswas</span></h1>
+                    <h2 class="typing-container">
+                        I am a <span id="typing-text" class="accent-text"></span><span class="cursor">&nbsp;</span>
+                    </h2>
+                    <p class="hero-description">
+                        B.Tech student at Institute of Engineering and Management (IEM). Dedicated, curious learner
+                        passionate about computer programming, building software, and solving complex real-world
+                        problems.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#contact" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i> Get In Touch
+                        </a>
+                        <a href="https://wa.me/919903714478" target="_blank" class="btn btn-whatsapp">
+                            <i class="fab fa-whatsapp"></i> WhatsApp Me
+                        </a>
+                    </div>
+
+                    <div class="hero-social-quick">
+                        <a href="https://github.com/brohan004iemofficial-jpg" target="_blank" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/rohan-biswas-659118422" target="_blank" title="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+
+                        <a href="https://youtube.com/@rb_coding_tech?si=U2s4r-b7K2jDCDoU" target="_blank"
+                            title="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+
+                        <a href="https://instagram.com/itsme_silent005" target="_blank" title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+
+                        <!-- Google Drive -->
+                        <a href="https://drive.google.com/drive/folders/1puGrEA4B8RB5PLFNJmW9lQTEl8MYDS2I"
+                            target="_blank" title="Google Drive">
+                            <i class="fab fa-google-drive"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About & Personal Details Section -->
+        <section id="about" class="section">
+            <h2 class="section-title"><i class="fas fa-id-card"></i> About & Bio</h2>
+
+            <div class="grid-2">
+                <div class="card glass-card">
+                    <h3 class="card-heading"><i class="fas fa-user-tag"></i> Personal Profile</h3>
+                    <p class="about-text">
+                        My name is Rohan Biswas. I am a B.Tech student studying at the <strong>Institute of Engineering
+                            and Management (IEM)</strong>. I am a dedicated and curious learner who enjoys exploring new
+                        ideas and applying my knowledge to solve real-world problems.
+                    </p>
+                    <p class="about-text">
+                        I believe in hard work, honesty, and always giving my best in everything I do. With a positive
+                        outlook on life, I approach challenges with determination and optimism. In my free time, I
+                        engage in activities that foster both personal and professional growth.
+                    </p>
+
+                    <div class="details-list">
+
+                        <div class="detail-item">
+                            <span class="detail-label">Date of Birth</span>
+                            <span class="detail-value">21 September 2006</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Gender</span>
+                            <span class="detail-value">Male</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Nationality</span>
+                            <span class="detail-value">Indian</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Marital Status</span>
+                            <span class="detail-value">Unmarried</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card glass-card flex-column space-between">
+                    <div>
+                        <h3 class="card-heading"><i class="fas fa-map-marker-alt"></i> Address & Location</h3>
+
+                        <div class="address-box">
+                            <div class="address-title"><i class="fas fa-home"></i> Present Address</div>
+                            <p class="address-desc">
+                                K.N.C Road, Barasat, Sree Kanan, Barasat,<br>
+                                North 24 Parganas, WB, PIN – 700124
+                            </p>
+                        </div>
+
+                        <div class="address-box">
+                            <div class="address-title"><i class="fas fa-map-pin"></i> Permanent Address</div>
+                            <p class="address-desc">
+                                Vill - Narayanpur, PO – Lakshmipul, PS - Habra,<br>
+                                North 24 Parganas, WB, PIN – 743234
+                            </p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="card-heading"><i class="fas fa-language"></i> Languages Spoken</h3>
+                        <div class="tags-container">
+                            <span class="tag"><i class="fas fa-check"></i> English</span>
+                            <span class="tag"><i class="fas fa-check"></i> Bengali (Native)</span>
+                            <span class="tag"><i class="fas fa-check"></i> Hindi</span>
+                        </div>
+
+                        <h3 class="card-heading" style="margin-top: 20px;"><i class="fas fa-heart"></i> Hobbies</h3>
+                        <div class="tags-container">
+                            <span class="tag alt"><i class="fas fa-book"></i> Reading Story Books</span>
+                            <span class="tag alt"><i class="fas fa-laptop-code"></i> Computer Programming</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Timeline Section -->
+        <section id="education" class="section">
+            <h2 class="section-title"><i class="fas fa-graduation-cap"></i> Academic Journey</h2>
+
+            <div class="timeline">
+                <!-- B.Tech -->
+                <div class="timeline-item left">
+                    <div class="timeline-content glass-card">
+                        <div class="timeline-badge">Present</div>
+                        <h3>B.Tech Degree</h3>
+                        <p class="institution">Institute of Engineering and Management (IEM) / UEM</p>
+                        <p class="timeline-desc">Pursuing Engineering with a primary focus on Computer Science,
+                            algorithm development, and modern technologies.</p>
+                    </div>
+                </div>
+
+                <!-- Higher Secondary -->
+                <div class="timeline-item right">
+                    <div class="timeline-content glass-card">
+                        <div class="timeline-badge">2025</div>
+                        <h3>Higher Secondary (12th Grade)</h3>
+                        <p class="institution">W.B.C.H.S.E Board</p>
+                        <div class="score-pill">Score: 82.46%</div>
+                        <p class="timeline-desc">Completed Senior Secondary Education with high academic distinction and
+                            focus on Science and Mathematics.</p>
+                    </div>
+                </div>
+
+                <!-- Secondary -->
+                <div class="timeline-item left">
+                    <div class="timeline-content glass-card">
+                        <div class="timeline-badge">2023</div>
+                        <h3>Secondary Education (10th Grade)</h3>
+                        <p class="institution">W.B.B.S.E Board</p>
+                        <div class="score-pill">Score: 79.82%</div>
+                        <p class="timeline-desc">Successfully completed secondary board examinations with strong
+                            fundamentals in Science subjects.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Skills Section -->
+        <section id="skills" class="section">
+            <h2 class="section-title"><i class="fas fa-laptop-code"></i> Technical Skills</h2>
+
+            <div class="grid-2">
+                <div class="card glass-card">
+                    <h3 class="card-heading"><i class="fas fa-terminal"></i> Programming Languages</h3>
+
+                    <div class="skill-bar-wrapper">
+                        <div class="skill-info">
+                            <span>Java</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 85%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-bar-wrapper">
+                        <div class="skill-info">
+                            <span>C Programming</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 80%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-bar-wrapper">
+                        <div class="skill-info">
+                            <span>Python</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 75%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card glass-card">
+                    <h3 class="card-heading"><i class="fas fa-tools"></i> Software & Tools</h3>
+
+                    <div class="skill-bar-wrapper">
+                        <div class="skill-info">
+                            <span>MS Office Suite</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 90%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-bar-wrapper">
+                        <div class="skill-info">
+                            <span>Git & GitHub</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 75%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-bar-wrapper">
+                        <div class="skill-info">
+                            <span>Problem Solving</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Social Profiles Section -->
+        <section id="socials" class="section">
+            <h2 class="section-title"><i class="fas fa-globe"></i> Online Profiles & Media</h2>
+
+            <div class="social-grid">
+                <!-- GitHub -->
+                <a href="https://github.com/brohan004iemofficial-jpg" target="_blank" class="social-card github">
+                    <i class="fab fa-github social-icon"></i>
+                    <div class="social-info">
+                        <h4>GitHub Profile</h4>
+                        <span>@brohan004iemofficial-jpg</span>
+                    </div>
+                    <i class="fas fa-arrow-right arrow-icon"></i>
+                </a>
+
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/rohan-biswas-659118422" target="_blank"
+                    class="social-card linkedin">
+                    <i class="fab fa-linkedin-in social-icon"></i>
+                    <div class="social-info">
+                        <h4>LinkedIn Network</h4>
+                        <span>rohan-biswas-659118422</span>
+                    </div>
+                    <i class="fas fa-arrow-right arrow-icon"></i>
+                </a>
+
+                <!-- YouTube -->
+                <a href="https://youtube.com/@rb_coding_tech?si=U2s4r-b7K2jDCDoU" target="_blank"
+                    class="social-card youtube">
+                    <i class="fab fa-youtube social-icon"></i>
+                    <div class="social-info">
+                        <h4>YouTube Channel</h4>
+                        <span>@rb_coing_tech</span>
+                    </div>
+                    <i class="fas fa-arrow-right arrow-icon"></i>
+                </a>
+
+                <!-- Facebook -->
+                <a href="https://www.facebook.com/share/1RDjoJWQTN/" target="_blank" class="social-card facebook">
+                    <i class="fab fa-facebook-f social-icon"></i>
+                    <div class="social-info">
+                        <h4>Facebook Page</h4>
+                        <span>Connect on Facebook</span>
+                    </div>
+                    <i class="fas fa-arrow-right arrow-icon"></i>
+                </a>
+
+                <!-- Instagram -->
+                <a href="https://instagram.com/itsme_silent005" target="_blank" class="social-card instagram">
+                    <i class="fab fa-instagram social-icon"></i>
+                    <div class="social-info">
+                        <h4>Instagram</h4>
+                        <span>@itsme_silent005</span>
+                    </div>
+                    <i class="fas fa-arrow-right arrow-icon"></i>
+                </a>
+
+                <!-- WhatsApp -->
+                <a href="https://wa.me/919903714478" target="_blank" class="social-card whatsapp">
+                    <i class="fab fa-whatsapp social-icon"></i>
+                    <div class="social-info">
+                        <h4>Direct WhatsApp</h4>
+                        <span>+91 9903714478</span>
+                    </div>
+                    <i class="fas fa-arrow-right arrow-icon"></i>
+                </a>
+                <!-- Google Drive -->
+                <a href="https://drive.google.com/drive/folders/1puGrEA4B8RB5PLFNJmW9lQTEl8MYDS2I" target="_blank"
+                    class="social-card google-drive">
+                    <i class="fab fa-google-drive social-icon"></i>
+                    <div class="social-info">
+                        <h4>Google Drive</h4>
+                        <span>View My Files</span>
+                    </div>
+                    <i class="fas fa-arrow-right arrow-icon"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section id="contact" class="section">
+            <h2 class="section-title"><i class="fas fa-paper-plane"></i> Get In Touch</h2>
+
+            <div class="grid-2">
+                <div class="card glass-card">
+                    <h3 class="card-heading">Contact Information</h3>
+
+                    <div class="contact-methods">
+                        <div class="contact-box">
+                            <i class="fas fa-envelope contact-ico"></i>
+                            <div>
+                                <h5>Email Address</h5>
+                                <a href="mailto:biswasrohan006@gmail.com">biswasrohan006@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-box">
+                            <i class="fas fa-phone-alt contact-ico"></i>
+                            <div>
+                                <h5>Primary Phone</h5>
+                                <a href="tel:+919903714478">+91 9903714478</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-box">
+                            <i class="fas fa-mobile-alt contact-ico"></i>
+                            <div>
+                                <h5>Secondary Phone</h5>
+                                <a href="tel:+917980464699">+91 7980464699</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card glass-card">
+                    <h3 class="card-heading">Send a Direct Message</h3>
+
+                    <form id="contact-form" onsubmit="handleFormSubmit(event)">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Your Name" required class="form-input">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Your Email" required class="form-input">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="4" placeholder="Your Message..." required
+                                class="form-input"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary full-width">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p>&copy; 2026 Rohan Biswas. All rights reserved.</p>
+            <p class="subtext">Designed & Developed with Passion for IEM Student Rohan Biswas</p>
+        </div>
+    </footer>
+
+    <!-- Custom JavaScript File -->
+    <script src="script.js"></script>
+</body>
+
+</html>
